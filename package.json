@@ -1,0 +1,16 @@
+{
+  "name": "charanime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm run start",
+    "start:frontend": "cd frontend && ng serve"
+  },
+  "author": "Hugo Mathieu Steinbach",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
