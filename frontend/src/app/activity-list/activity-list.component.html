@@ -1,0 +1,21 @@
+<div class="center-section">
+    <ul>
+        <li *ngFor="let activity of activities" class="activity-case">
+            <div class="activity-info">
+                <h2>{{ activity.title }}</h2>
+                <p>Objectif : {{ activity.objective }}</p>
+                <p>Organisateur : {{ activity.organizer }}</p>
+                <p>Participants : {{ activity.participants.join(', ') }}</p>
+            </div>
+            <div class="activity-dates">
+                <p class="start-date">{{ activity.startDate }}</p>
+                <div class="activity-progress">
+                    <span class="progress-text">{{ calculateRemainingTime(activity.endDate) }}</span>
+                    <div class="progress-bar" [style.width.%]="calculateProgress(activity.startDate, activity.endDate)">
+                    </div>
+                </div>
+                <p class="end-date">{{ activity.endDate }}</p>
+            </div>
+        </li>
+    </ul>
+</div>
