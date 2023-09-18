@@ -1,11 +1,14 @@
 {
-  "name": "charanime",
+  "name": "achievo",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
-    "start:backend": "cd backend && npm run start",
+    "install": "concurrently \"pnpm run install:backend\" \"pnpm run install:frontend\"",
+    "install:backend": "cd backend && pnpm install",
+    "install:frontend": "cd frontend && pnpm install",
+    "start": "concurrently \"pnpm run start:backend\" \"pnpm run start:frontend\"",
+    "start:backend": "cd backend && pnpm run start",
     "start:frontend": "cd frontend && ng serve"
   },
   "author": "Hugo Mathieu Steinbach",
