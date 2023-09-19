@@ -8,13 +8,13 @@
                 <p>Participants : {{ activity.participants.join(', ') }}</p>
             </div>
             <div class="activity-dates">
-                <p class="start-date">{{ activity.startDate }}</p>
+                <p class="start-date">{{ activity.startDate | date:'d/M' }}</p>
                 <div class="activity-progress">
                     <span class="progress-text">{{ calculateRemainingTime(activity.endDate) }}</span>
                     <div class="progress-bar" [style.width.%]="calculateProgress(activity.startDate, activity.endDate)">
                     </div>
                 </div>
-                <p class="end-date">{{ activity.endDate }}</p>
+                <p class="end-date">{{ activity.endDate | date:'d/M' }}</p>
             </div>
         </li>
     </ul>

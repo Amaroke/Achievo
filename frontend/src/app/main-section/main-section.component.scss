@@ -2,14 +2,36 @@
     display: flex;
     flex-direction: row;
     flex: 1;
-    min-height: 94vh;
+    min-height: 93vh;
+    max-height: 93vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     overflow-y: auto;
 }
 
 .left-section,
-.center-section,
 .right-section {
     flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.center-section {
+    flex: 2;
+    padding: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
 }

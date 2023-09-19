@@ -1,5 +1,6 @@
 .activity-case {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
@@ -21,8 +22,9 @@
 
 .activity-dates {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 90%;
 }
 
 .activity-dates p {
@@ -32,6 +34,7 @@
 .start-date,
 .end-date {
     font-weight: bold;
+    padding: 10px;
 }
 
 .activity-progress {
@@ -46,7 +49,6 @@
     height: 100%;
     border-radius: 10px;
     background-color: #007bff;
-    /* Couleur de la barre de progression */
 }
 
 .progress-text {
