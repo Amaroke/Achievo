@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Activity } from '../shared/types/activity.type';
 
 @Component({
   selector: 'app-activity-list',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./activity-list.component.scss']
 })
 export class ActivityListComponent {
-  @Input() activities: any[];
+  @Input() activities: Activity[];
 
   constructor() {
     this.activities = [];
