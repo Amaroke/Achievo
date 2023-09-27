@@ -35,6 +35,12 @@ THE SOFTWARE.
 @angular/platform-browser
 MIT
 
+@ng-icons/core
+MIT
+
+@ng-icons/heroicons
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
