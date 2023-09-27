@@ -8,9 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { ActivityListComponent } from './activity-list/activity-list.component';
 import { SearchSectionComponent } from './search-section/search-section.component';
+import { PostSectionComponent } from './post-section/post-section.component';
 
 @NgModule({
-  declarations: [AppComponent, MainSectionComponent, FooterComponent, NavigationBarComponent, ActivityListComponent, SearchSectionComponent],
+  declarations: [AppComponent, MainSectionComponent, FooterComponent, NavigationBarComponent, ActivityListComponent, SearchSectionComponent, PostSectionComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

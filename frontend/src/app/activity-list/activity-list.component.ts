@@ -4,7 +4,7 @@ import { Activity } from '../shared/types/activity.type';
 @Component({
   selector: 'app-activity-list',
   templateUrl: './activity-list.component.html',
-  styleUrls: ['./activity-list.component.scss']
+  styleUrls: []
 })
 export class ActivityListComponent {
   @Input() activities: Activity[];

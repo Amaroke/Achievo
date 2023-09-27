@@ -1,11 +1,11 @@
-<div class="main-section">
-    <div class="left-section">
-        <app-search-section></app-search-section>
+<div class="flex">
+    <div class="flex-1 hidden md:block w-1/6 p-1.5">
+        <app-search-section />
     </div>
-    <div class="center-section">
-        <app-activity-list [activities]="activities"></app-activity-list>
+    <div class="flex-2 lg:w-1/2">
+        <app-activity-list [activities]="activities" />
     </div>
-    <div class="right-section">
-        test
+    <div class="flex-1 hidden md:block w-1/6 p-1.5">
+        <app-post-section />
     </div>
 </div>

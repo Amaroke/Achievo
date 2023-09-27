@@ -1,20 +1,27 @@
 <div class="center-section">
     <ul>
-        <li *ngFor="let activity of activities" class="activity-case">
-            <div class="activity-info">
-                <h2>{{ activity.title }}</h2>
-                <p>Objectif : {{ activity.objective }}</p>
-                <p>Organisateur : {{ activity.organizer }}</p>
-                <p>Participants : {{ activity.participants.join(', ') }}</p>
-            </div>
-            <div class="activity-dates">
-                <p class="start-date">{{ activity.startDate | date:'d/M' }}</p>
-                <div class="activity-progress">
-                    <span class="progress-text">{{ calculateRemainingTime(activity.endDate) }}</span>
-                    <div class="progress-bar" [style.width.%]="calculateProgress(activity.startDate, activity.endDate)">
-                    </div>
+        <li *ngFor="let activity of activities" class="bg-background text-font p-4 rounded-lg shadow-md my-4">
+            <div class="flex flex-col justify-between h-full">
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold">{{ activity.title }}</h2>
+                    <p class="mb-2">Objectif : {{ activity.objective }}</p>
+                    <p class="mb-2">Organisateur : {{ activity.organizer }}</p>
+                    <p>Participants : {{ activity.participants.join(', ') }}</p>
                 </div>
-                <p class="end-date">{{ activity.endDate | date:'d/M' }}</p>
+                <div class="flex items-center w-90">
+                    <p class="font-semibold p-2">{{ activity.startDate | date:'d/M' }}</p>
+                    <div class="w-3/4 ml-2">
+                        <div class="bg-background h-6 rounded-full relative">
+                            <div class="bg-highlight h-6 rounded-full"
+                                [style.width.%]="calculateProgress(activity.startDate, activity.endDate)">
+                            </div>
+                            <p
+                                class="text-font font-semibold text-xs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                {{ calculateRemainingTime(activity.endDate) }}</p>
+                        </div>
+                    </div>
+                    <p class="font-semibold p-2">{{ activity.endDate | date:'d/M' }}</p>
+                </div>
             </div>
         </li>
     </ul>
