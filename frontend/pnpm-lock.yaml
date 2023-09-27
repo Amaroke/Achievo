@@ -35,6 +35,12 @@ dependencies:
   '@angular/router':
     specifier: ^16.2.0
     version: 16.2.4(@angular/common@16.2.4)(@angular/core@16.2.4)(@angular/platform-browser@16.2.4)(rxjs@7.8.1)
+  '@ng-icons/core':
+    specifier: ^25.3.1
+    version: 25.3.1
+  '@ng-icons/heroicons':
+    specifier: ^25.3.1
+    version: 25.3.1
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -2779,6 +2785,18 @@ packages:
     dependencies:
       '@material/feature-targeting': 15.0.0-canary.bc9ae6c9c.0
       '@material/theme': 15.0.0-canary.bc9ae6c9c.0
+      tslib: 2.6.2
+    dev: false
+
+  /@ng-icons/core@25.3.1:
+    resolution: {integrity: sha512-MVdIzJ4xOlCDqPXbUqJunbr3N9FiP99phAna9zFUzkp25eU5SZZ6vgw86KVsbyZfv2efbK3av0Qm2VIKEzKmEA==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+
+  /@ng-icons/heroicons@25.3.1:
+    resolution: {integrity: sha512-jkvPQ+qLUnBSlEiSQ2LH6Lxj/BnnR95RMimw8h7BeqNmciPYDEBEZPPv0Aim0BOoTBBjrkyC9Dym6pLjnFUC+Q==}
+    dependencies:
       tslib: 2.6.2
     dev: false
 

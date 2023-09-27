@@ -9,13 +9,17 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { ActivityListComponent } from './activity-list/activity-list.component';
 import { SearchSectionComponent } from './search-section/search-section.component';
 import { PostSectionComponent } from './post-section/post-section.component';
+import { NgIconsModule } from '@ng-icons/core';
+import { heroUserCircle } from '@ng-icons/heroicons/outline';
+import { heroArrowRightOnRectangle } from '@ng-icons/heroicons/outline';
 
 @NgModule({
   declarations: [AppComponent, MainSectionComponent, FooterComponent, NavigationBarComponent, ActivityListComponent, SearchSectionComponent, PostSectionComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgIconsModule.withIcons({ heroArrowRightOnRectangle, heroUserCircle }),
   ],
   providers: [],
   bootstrap: [AppComponent]
