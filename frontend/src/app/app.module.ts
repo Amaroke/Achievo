@@ -25,5 +25,4 @@ import { heroArrowRightOnRectangle } from '@ng-icons/heroicons/outline';
   bootstrap: [AppComponent]
 })
 
-export class AppModule {
-}
+export class AppModule { }
